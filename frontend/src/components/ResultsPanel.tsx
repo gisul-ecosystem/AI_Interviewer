@@ -29,7 +29,7 @@ export default function ResultsPanel({ sessionId }: Props) {
       try {
         setLoading(true);
         setError("");
-        const res = await fetch("http://localhost:8000/api/interview/score", {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/interview/score`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ session_id: sessionId }),
