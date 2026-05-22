@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+openai
+python-dotenv
+pydantic
+pydantic-settings
+motor
+pymongo
+httpx
+deepgram-sdk==3.11.0
+livekit
+livekit-agents
+livekit-plugins-deepgram
+livekit-plugins-openai
+livekit-plugins-elevenlabs
+livekit-plugins-silero
