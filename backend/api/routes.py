@@ -74,7 +74,7 @@ async def setup(payload: SetupRequest):
         ]
 
         lk = livekit_api.LiveKitAPI(
-            url=os.getenv("LIVEKIT_URL"),
+            url=os.getenv("LIVEKIT_API_URL", os.getenv("LIVEKIT_URL")),
             api_key=os.getenv("LIVEKIT_API_KEY"),
             api_secret=os.getenv("LIVEKIT_API_SECRET"),
         )
